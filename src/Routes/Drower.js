@@ -1,14 +1,12 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-//import Game from "../screens/Game";
-//import Home from "../screens/Home";
+//import contato
 
 const Drawer = createDrawerNavigator();
 
 const MyDrawer = () => {
     return (
         <Drawer.Navigator>
-            {/* <Drawer.Screen name="Home" component={Home} /> */}
-            {/* <Drawer.Screen name="Game" component={Game} /> */}
+            {/* <Drawer.Screen name="Home" component={Contato} /> */}
         </Drawer.Navigator> 
     );
 };
