@@ -1,11 +1,35 @@
 import React from "react";
-import { Text } from "react-native";
-import { KeyBoardView, Title } from "./styles";
+import { Button, Text } from "react-native";
+import { KeyBoardView, 
+    Title, 
+    Container, 
+    Input,
+    ButtonSubmit,
+    TextSubmit
+} from "./styles";
+import Header from "../../Components/Header";
 
 const Signin = () => {
     return (
         <KeyBoardView>
-            <Title>Login</Title>
+            {/* <Header/> */}
+            <Container>
+                <Title>Login</Title>
+                <Input
+                    placeholderTextColor="#fff"
+                    placeholder="Login"
+                />
+
+                <Input
+                    placeholderTextColor="#fff"
+                    placeholder="Senha"
+                    secureTextEntry
+                />
+                <ButtonSubmit>
+                    <TextSubmit>Entrar</TextSubmit>
+                </ButtonSubmit>
+
+            </Container>
         </KeyBoardView>
     )
 }
