@@ -1,6 +1,6 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-//import Login 
+import Login from "../screens/Login";
 
 const Stack = createNativeStackNavigator();
 
@@ -12,11 +12,11 @@ const RotasPublicas = () => {
         component={Login}
         options={{ headerShown: false }}
       />
-     {/*  <Stack.Screen
+      {/* <Stack.Screen
         name="Contatos"
         component={Cotatos}
         options={{ title: "Título da Página" }}
-      /> vai ficar no draw?  */}
+      /> vai ficar no drawer?  */}
     </Stack.Navigator>
   );
 };

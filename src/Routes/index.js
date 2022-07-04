@@ -1,17 +1,17 @@
 import { NavigationContainer } from "@react-navigation/native";
-//import { useContext } from "react";
-//import { AuthContext } from "../context/AuthContext";
+import { useContext } from "react";
+import { AuthContext } from "../context/context";
 import RotasPrivadas from "./RotasPrivadas";
-import RotasPublicas from "./RotasPublicas";
+import RotasPublicas from "./RotasPublicas.js";
 
 const Routes = () => {
- // const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
- // console.log(user);
+  console.log(user);
 
   return (
     <NavigationContainer>
-     {/* {!!user ? <RotasPrivadas /> : <RotasPublicas />}*/}
+      {!!user ? <RotasPrivadas /> : <RotasPublicas />}
     </NavigationContainer>
   );
 };
