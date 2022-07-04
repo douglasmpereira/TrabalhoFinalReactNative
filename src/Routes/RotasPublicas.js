@@ -11,12 +11,13 @@ const RotasPublicas = () => {
         name="Login"
         component={Login}
         options={{ headerShown: false }}
+        //chamo o drawer aqui?
       />
-     {/*  <Stack.Screen
+      {/* <Stack.Screen
         name="Contatos"
         component={Cotatos}
         options={{ title: "Título da Página" }}
-      /> vai ficar no draw?  */}
+      /> vai ficar no drawer?  */}
     </Stack.Navigator>
   );
 };

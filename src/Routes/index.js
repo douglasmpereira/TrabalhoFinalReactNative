@@ -11,7 +11,8 @@ const Routes = () => {
 
   return (
     <NavigationContainer>
-     {/* {!!user ? <RotasPrivadas /> : <RotasPublicas />}*/}
+      {/*chamar o drawer aqui */}
+     {/*  {!!user ? <RotasPrivadas /> : <RotasPublicas />}*/}
     </NavigationContainer>
   );
 };
