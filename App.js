@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Routes from './src/Routes';
+import ModalList from './src/components/componentsCRUD/modal';
 
 export default function App() {
   return (
