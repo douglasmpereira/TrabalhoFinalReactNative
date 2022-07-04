@@ -9,7 +9,7 @@ import { KeyBoardView,
 } from "./styles";
 import Header from "../../Components/Header";
 
-const Signin = () => {
+const Login = () => {
     return (
         <KeyBoardView>
             {/* <Header/> */}
@@ -35,4 +35,4 @@ const Signin = () => {
 }
 
 
-export default Signin;
+export default Login;

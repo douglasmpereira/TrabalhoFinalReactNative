@@ -1,10 +1,10 @@
 import react from "react"
-import { View, Text } from "react-native-web"
+import { View, Text } from "react-native"
 
 const Contatos = () => {
     return(
         <View>
-            <Text>Constatos</Text>
+            <Text>Contatos</Text>
             <Text>Douglas Moreira</Text>
             <Text>Marcelo Pessanha</Text>
             <Text>Maria Eduarda Carvalho</Text>
