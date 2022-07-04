@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Contatos } from './src/screens/Contatos/index'
-
+import Login from './src/screens/Login';
+import Signin from './src/screens/Login/login';
 const App = () => {
   return (
     <>
+      <Signin/>
       <View style={styles.container}>
-        <Text>Constatos</Text>
+        {/* <Login/> */}
+        {/* <Text>Contatos</Text>
         <Text>Douglas Moreira</Text>
         <Text>Marcelo Pessanha</Text>
         <Text>Maria Eduarda Carvalho</Text>
@@ -14,7 +17,7 @@ const App = () => {
         <Text>Rodrigo Ramos</Text>
         <Text>Rayssa Medeiros</Text>
         <Text>Thatto Filgueiras</Text>
-        <StatusBar style="auto" />
+        <StatusBar style="auto" /> */}
       </View>
     </>
   );
