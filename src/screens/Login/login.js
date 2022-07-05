@@ -1,33 +1,67 @@
-import React from "react";
-import { Button, Text } from "react-native";
-import { KeyBoardView, 
+import React, { useState } from "react";
+import styles, { KeyBoardView, 
     Title, 
     Container, 
-    Input,
-    ButtonSubmit,
-    TextSubmit
+    TextInput,
+    Button
 } from "./styles";
-import Header from "../../Components/Header";
 
-const Login = () => {
+import { Text, TouchableOpacity } from "react-native";
+
+
+
+function Login({navigation})  {
+    
+
+    const user="Aluno"
+    const password= "123"
+    const [usuario, setUsuario] = useState("")
+    const [senha, setSenha] = useState("")
+    const logar = () => {
+
+        if ( usuario === user && senha === password) {
+            alert("Loguei CaRaY")
+            navigation.navigate("Produto");
+            
+        }else {
+            alert("Login ou senha inválido, tente novamente!")
+            
+        }
+        
+    };
+
+    
+
     return (
         <KeyBoardView>
             {/* <Header/> */}
             <Container>
                 <Title>Login</Title>
-                <Input
+                <TextInput
                     placeholderTextColor="#fff"
                     placeholder="Login"
+                    onChangeText={text=>setUsuario(text)}
                 />
 
-                <Input
+                <TextInput
+                    
                     placeholderTextColor="#fff"
                     placeholder="Senha"
+                    onChangeText={text=>setSenha(text)}
                     secureTextEntry
                 />
-                <ButtonSubmit>
-                    <TextSubmit>Entrar</TextSubmit>
-                </ButtonSubmit>
+                <Button  onPress={() => logar()} >
+                    <Text>Log in</Text>
+                </Button>
+                <TouchableOpacity onPress={() => cadastro()}>
+                    <Text>
+                        Não tem uma conta?{""}
+                        <Text style={styles.createAccountText}>
+                            FODA-SEEE
+                        </Text>
+                    </Text>
+                </TouchableOpacity>
+                        
 
             </Container>
         </KeyBoardView>

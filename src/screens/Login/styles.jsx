@@ -1,53 +1,58 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 import { StyleSheet } from "react-native";
 
 export const KeyBoardView = styled.KeyboardAvoidingView`
     flex: 1;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    color: rgb(11, 119, 138);
     width: 100%;
 `
 
 export const Title = styled.Text`
-    color: #fff;
+    color: #000;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
 `
 
-export const Input = styled.TextInput`
+export const TextInput = styled.TextInput`
     border: 2px solid #12E6C8;
     margin-bottom: 30px;
     padding: 20px;
     color: #fff;
-    font-size: 20px
+    font-size: 20px;
     border-radius: 9px;
     width: 90%;
 `
 
-export const ButtonSubmit = styled.TouchableOpacity`
+
+
+export const Button = styled.TouchableOpacity`
     background-color: #A287F4;
-    border-radius: 9px;
-    width: 90%;
+    border-radius: 12px;
+    width: 70%;
     padding: 20px;
     align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
     `
     
-    export const TextSubmit = styled.Text`
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
+//     export const TextSubmit = styled.Text`
+//         color: #fff;
+//         font-size: 20px;
+//         font-weight: bold;
 
-`
+// `
 
 export const Container = styled.View`
     flex: 1;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
-    background-color: #000
+    background-color: rgb(11, 119, 138);
     width: 90%;
+    
 `
 
 const styles = StyleSheet.create({
@@ -65,8 +70,13 @@ const styles = StyleSheet.create({
         borderColor: "#000",
         borderWidth: 2,
         borderStyle: "solid",
-        borderRadius: 25
+        borderRadius: 25,
+    },
+    createAccountText: {
+        fontWeight: "bold",
+        color: "#6200ee",
     }
+
 })
 
 export default styles;
