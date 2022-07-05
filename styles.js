@@ -10,15 +10,16 @@ export const styles = StyleSheet.create({
     },
     titulo:{
         fontSize:50,
-        marginBottom: 10
+        marginBottom: 10        
     },
     card: {
       backgroundColor: 'rgba(64, 0, 80, 0.7)',
       width: "50%",
-      height: "10%",
+      height: "6%",
       justifyContent: 'space-evenly',     
       marginBottom:20,
-      marginTop:5
+      marginTop:5,
+      borderRadius:8
   
     },
     card1:{
@@ -37,9 +38,10 @@ export const styles = StyleSheet.create({
       marginBottom: '2%'
     },
     img:{
-      width:100,
-      height:100,
-     
+      width:150,
+      height:150,
+      borderRadius:8   
+      
     }
     })  ;
 
