@@ -34,16 +34,11 @@ export const Button = styled.TouchableOpacity`
     width: 70%;
     padding: 20px;
     align-items: center;
-    color: #fff;
     margin-bottom: 20px;
-    `
-    
-//     export const TextSubmit = styled.Text`
-//         color: #fff;
-//         font-size: 20px;
-//         font-weight: bold;
+    textcolor: #000
 
-// `
+`
+    
 
 export const Container = styled.View`
     flex: 1;
