@@ -35,12 +35,13 @@ export const styles = StyleSheet.create({
       display: "flex",
       flexDirection: 'row',
       justifyContent: 'space-evenly',
-      marginBottom: '2%'
+      marginBottom: '2%',
+      
     },
     img:{
       width:150,
       height:150,
-      borderRadius:8   
+      borderRadius:8  
       
     }
     })  ;
