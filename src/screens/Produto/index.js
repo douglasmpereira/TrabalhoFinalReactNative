@@ -6,25 +6,25 @@ const Produto = ({navigation}) => {
     const [produtos, setProdutos] = useState(null)
     const [loading, setLoading] = useState(true);
 
-    const [teste, setTeste] = useState([
-        {nomeProduto: 'laranja', quantidadeEstoque: '5', id:1 },
-        {nomeProduto: 'pera', quantidadeEstoque: '10', id:2 },
-        {nomeProduto: 'banana', quantidadeEstoque: '4', id:3 },
-        {nomeProduto: 'uva', quantidadeEstoque: '32', id:4 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:5 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:6 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:7 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:8 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:9 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:10 },
-        {nomeProduto: 'morango', quantidadeEstoque: '3', id:11},
-    ])
+    // const [teste, setTeste] = useState([
+    //     {nomeProduto: 'laranja', quantidadeEstoque: '5', id:1 },
+    //     {nomeProduto: 'pera', quantidadeEstoque: '10', id:2 },
+    //     {nomeProduto: 'banana', quantidadeEstoque: '4', id:3 },
+    //     {nomeProduto: 'uva', quantidadeEstoque: '32', id:4 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:5 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:6 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:7 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:8 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:9 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:10 },
+    //     {nomeProduto: 'morango', quantidadeEstoque: '3', id:11},
+    // ])
 
-    const irParaDetalhes = async () => {
-        navigation.navigate("ProdutoDetalhes", {
-            idproduto: produtos.id
-        })
-    }
+    // const irParaDetalhes = async () => {
+    //     navigation.navigate("ProdutoDetalhes", {
+    //         idproduto: produtos.id
+    //     })
+    // }
 
     useEffect(() => {
         const get = async () => {
@@ -56,9 +56,9 @@ const Produto = ({navigation}) => {
                     <View style={styles.estoque}>
                         <Text> Quantidade: {item.quantidadeEstoque}</Text>
                     </View>
-                    <TouchableOpacity onPress={irParaDetalhes}>
+                    {/* <TouchableOpacity onPress={irParaDetalhes}>
                         <Text> Ver Detalhes </Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                 </View>
             )}
             />

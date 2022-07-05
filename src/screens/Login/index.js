@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Button, Text, View } from "react-native";
+import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import { KeyBoardView, 
     Title, 
     Container, 
@@ -9,33 +11,36 @@ import { KeyBoardView,
 //import Header from "../../Components/Header";
 
 const Login = () => {
+    const [usuario, setUsuario] = useState("")
+    const [password, setPassword] = useState("")
+
+
     return (
-        <View>
             <KeyBoardView>
             {/* <Header/> */}
             <Container>
                 <Title>
                     Login
                 </Title>
-                <Input
+                <TextInput
                     placeholderTextColor="#fff"
                     placeholder="Login"
+                    onChangeText={text=>setUsuario(text)}  
                 />
-
-                <Input
+                
+                <TextInput
                     placeholderTextColor="#fff"
                     placeholder="Senha"
                     secureTextEntry
+                    onChangeText={text=>setPassword(text)}
                 />
-                <ButtonSubmit>
-                    <TextSubmit>
-                        Entrar
-                    </TextSubmit>
-                </ButtonSubmit>
-
+                <TouchableOpacity onPress={() => signIn()}>
+                    <Text>
+                        Entrar    
+                    </Text>
+                </TouchableOpacity>
             </Container>
         </KeyBoardView>
-        </View>
     )
 }
 
