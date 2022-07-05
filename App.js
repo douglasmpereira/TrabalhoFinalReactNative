@@ -72,7 +72,7 @@ const App = () => {
 
       <View style={styles.card}>
 
-        <Text style={styles.baseText}>Rodrigo Ramos</Text>
+        <Text style={styles.baseText}>RodrigoRamos</Text>
         <View style={styles.icon}>
           <Icon name="facebook" size={30} color="white" onPress={() => { Linking.openURL('https://www.facebook.com/rodrigo.ramos.37051') }} />
           <Icon name="instagram" size={30} color="white" onPress={() => { Linking.openURL('https://www.instagram.com/rodrigomramos/') }} />
