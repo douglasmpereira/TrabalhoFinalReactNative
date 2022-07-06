@@ -6,7 +6,8 @@ import RotasPublicas from "./RotasPublicas.js";
 import AuthProvider from "../context/context";
 
 const Routes = () => {
-  const { user } = useContext(AuthContext);
+   const { user } = useContext(AuthContext);
+  
 
 
 //   useEffect(() => {
@@ -19,7 +20,8 @@ const Routes = () => {
 
   return (
     <NavigationContainer>
-      {!!user ? <RotasPrivadas /> : <RotasPublicas />}
+      {/* {!!user ? <RotasPrivadas /> : <RotasPublicas />} */}
+      <RotasPrivadas/>
     </NavigationContainer>
   );
 };
