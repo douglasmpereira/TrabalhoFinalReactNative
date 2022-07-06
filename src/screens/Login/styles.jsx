@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components";
 import { StyleSheet } from "react-native";
 
 export const KeyBoardView = styled.KeyboardAvoidingView`

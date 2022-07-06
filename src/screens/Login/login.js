@@ -5,14 +5,15 @@ import styles, { KeyBoardView,
     TextInput,
     Button
 } from "./styles";
-import { Text, TouchableOpacity ,Image} from "react-native";
+import { Text, Image} from "react-native";
 import logo from '../../../assets/Logo.png'
+import { useNavigation } from "@react-navigation/native";
 
 
 
 
-function Login({navigation})  {
-    
+function Login()  {
+    const navigation = useNavigation()
 
     const user="Aluno"
     const password= "123"

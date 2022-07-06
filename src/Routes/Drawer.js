@@ -7,8 +7,8 @@ const MyDrawer = () => {
     return (
         <Drawer.Navigator>
             {/* chamar as rotas/paginas que quero aqui */}
-            {/* <Drawer.Screen name="RotaPrivada" component={RotasPrivadas} /> /}
-            {/ {!!user ? <RotasPrivadas /> : <RotasPublicas />} por contatos dentro das privadas também (além de publicas)*/}
+            <Drawer.Screen name="RotaPrivada" component={RotasPrivadas} />
+            {!!user ? <RotasPrivadas /> : <RotasPublicas />} por contatos dentro das privadas também (além de publicas)
         </Drawer.Navigator>
     );
 };
