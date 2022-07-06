@@ -14,7 +14,7 @@ import { useNavigation } from "@react-navigation/native";
 
 function Login()  {
     const navigation = useNavigation()
-
+    const [loading, setLoading] = useState(false)
     const user="Aluno"
     const password= "123"
     const [usuario, setUsuario] = useState("")
@@ -22,10 +22,12 @@ function Login()  {
     const logar = () => {
 
         if ( usuario === user && senha === password) {
+            setLoading(true)
             alert("Loguei CaRaY")
             navigation.navigate("Produto");
             
         }else {
+            setLoading(false)
             alert("Login ou senha inválido, tente novamente!")
             
         }

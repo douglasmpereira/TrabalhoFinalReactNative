@@ -10,7 +10,7 @@ import { Link } from '@react-navigation/native';
 
 const Contatos = () => {
     
-    return (
+  return (
         <ScrollView contentContainerStyle={styles.container}>
     
           <View>
@@ -113,10 +113,10 @@ const Contatos = () => {
     
           </View>
     
-          <StatusBar style="auto" />
+      <StatusBar style="auto" />
     
-        </ScrollView>
-    )
+    </ScrollView>
+  )
 }
 export default Contatos
 

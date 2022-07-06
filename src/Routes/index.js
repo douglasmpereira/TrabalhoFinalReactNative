@@ -5,12 +5,12 @@ import { AuthContext } from "../context/context";
 import RotasPrivadas from "./RotasPrivadas";
 import RotasPublicas from "./RotasPublicas.js";
 
-const Routes = () => {
+const Routes = ({loading}) => {
   const { user} = useContext(AuthContext);
 
   return (
     <NavigationContainer>
-      {!!user ? <RotasPrivadas /> : <RotasPublicas />}
+      {!!loading ? <RotasPrivadas /> : <RotasPublicas />}
     </NavigationContainer>
   );
 };
