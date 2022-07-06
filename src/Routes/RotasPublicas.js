@@ -12,6 +12,7 @@ const RotasPublicas = () => {
         name="Login"
         component={Login}
         options={{ headerShown: false }}
+        //chamo o drawer aqui?
       />
       
     </Stack.Navigator>

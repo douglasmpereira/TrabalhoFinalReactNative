@@ -7,7 +7,6 @@ const App = () => {
       <StatusBar style="auto" />
     </>
   );
-}
+};
 
-
-export default App
+export default App;
