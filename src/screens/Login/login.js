@@ -35,6 +35,8 @@ function Login({navigation})  {
         <KeyBoardView >
            
             {/* <Header/> */}
+           
+            
             <Container >
             <Image source={logo}/>
                 <TextInput  

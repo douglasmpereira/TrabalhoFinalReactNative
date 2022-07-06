@@ -41,16 +41,9 @@ export const Button = styled.TouchableOpacity`
     width: 40%;
     padding: 5px;
     align-items: center;
-<<<<<<< HEAD
     color: red;
    
     `
-=======
-    margin-bottom: 20px;
-    textcolor: #000
-
-`
->>>>>>> 935d165055adb2c0921c9d2a6f190699ba28ad7f
     
 
 export const Container = styled.View`
@@ -89,7 +82,7 @@ const styles = StyleSheet.create({
         color: 'red',
     },
     
-
+    
 })
 
 export default styles;
