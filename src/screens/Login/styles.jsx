@@ -17,27 +17,40 @@ export const Title = styled.Text`
 `
 
 export const TextInput = styled.TextInput`
-    border: 2px solid #12E6C8;
+    background: #844E93;
+    borderColor: rgba(1, 10, 1, 0.40);
+    borderBottomWidth:5;
+    borderRightWidth:5;
     margin-bottom: 30px;
     padding: 20px;
     color: #fff;
     font-size: 20px;
-    border-radius: 9px;
+    border-radius: 20px;
     width: 90%;
+    outline: none;
 `
 
 
 
 export const Button = styled.TouchableOpacity`
-    background-color: #A287F4;
-    border-radius: 12px;
-    width: 70%;
-    padding: 20px;
+    background-color:#844E93;
+    border-radius: 20px;
+    borderColor: 'rgba(1, 10, 1, 0.40)',
+    borderBottomWidth:5;
+    borderRightWidth:5;
+    width: 40%;
+    padding: 5px;
     align-items: center;
+<<<<<<< HEAD
+    color: red;
+   
+    `
+=======
     margin-bottom: 20px;
     textcolor: #000
 
 `
+>>>>>>> 935d165055adb2c0921c9d2a6f190699ba28ad7f
     
 
 export const Container = styled.View`
@@ -45,7 +58,6 @@ export const Container = styled.View`
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
-    background-color: rgb(11, 119, 138);
     width: 90%;
     
 `
@@ -59,18 +71,24 @@ const styles = StyleSheet.create({
 
        
     },
+    btn:{
+        color: 'white',
+        fontSize: 30,
+    },
+   
     card: {
         justifyContent: 'flex-start',
         fontSize: 25,
-        borderColor: "#000",
+        borderColor: "red",
         borderWidth: 2,
         borderStyle: "solid",
         borderRadius: 25,
     },
     createAccountText: {
         fontWeight: "bold",
-        color: "#6200ee",
-    }
+        color: 'red',
+    },
+    
 
 })
 

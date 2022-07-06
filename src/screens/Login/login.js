@@ -5,8 +5,9 @@ import styles, { KeyBoardView,
     TextInput,
     Button
 } from "./styles";
+import { Text, TouchableOpacity ,Image} from "react-native";
+import logo from '../../../assets/Logo.png'
 
-import { Text, TouchableOpacity } from "react-native";
 
 
 
@@ -30,39 +31,30 @@ function Login({navigation})  {
         
     };
 
-    
-
     return (
-        <KeyBoardView>
+        <KeyBoardView >
+           
             {/* <Header/> */}
-            <Container>
-                <Title>Login</Title>
-                <TextInput
-                    placeholderTextColor="#fff"
+            <Container >
+            <Image source={logo}/>
+                <TextInput  
+                    
+                    placeholderTextColor="rgba(168, 165, 165, 0.62)"
                     placeholder="Login"
                     onChangeText={text=>setUsuario(text)}
-                />
+                    />
 
-                <TextInput
+                <TextInput 
                     
-                    placeholderTextColor="#fff"
+                    placeholderTextColor="rgba(168, 165, 165, 0.62)"
                     placeholder="Senha"
                     onChangeText={text=>setSenha(text)}
                     secureTextEntry
-                />
-                <Button  onPress={() => logar()} >
-                    <Text>Log in</Text>
+                    />
+                <Button onPress={() => logar()} >
+                    <Text style={styles.btn}>Login</Text>
                 </Button>
-                <TouchableOpacity onPress={() => cadastro()}>
-                    <Text>
-                        Não tem uma conta?{""}
-                        <Text style={styles.createAccountText}>
-                            FODA-SEEE
-                        </Text>
-                    </Text>
-                </TouchableOpacity>
-                        
-
+             
             </Container>
         </KeyBoardView>
     )
