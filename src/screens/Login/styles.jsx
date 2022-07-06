@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from "styled-components";
 import { StyleSheet } from "react-native";
 
 export const KeyBoardView = styled.KeyboardAvoidingView`
@@ -41,9 +41,16 @@ export const Button = styled.TouchableOpacity`
     width: 40%;
     padding: 5px;
     align-items: center;
+<<<<<<< HEAD
     color: red;
    
     `
+=======
+    margin-bottom: 20px;
+    textcolor: #000
+
+`
+>>>>>>> 0e47a891203f137e162ba317b93d91378ff30e42
     
 
 export const Container = styled.View`
