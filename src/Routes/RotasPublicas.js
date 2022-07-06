@@ -12,11 +12,6 @@ const RotasPublicas = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Drawer"
-        component={MyDrawer}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
         name="Login"
         component={Login2}
         options={{ headerShown: false }}
